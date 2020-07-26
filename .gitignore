@@ -1,3 +1,5 @@
 # Hugo default output directory
 /public
 /resources
+
+*.swp

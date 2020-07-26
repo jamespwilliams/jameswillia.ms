@@ -6,7 +6,8 @@ type: docs
 # Home
 
 Hi, I'm James. I'm a BEng Computing graduate from [Imperial College London](https://www.imperial.ac.uk/computing), and I'm currently working for 
-[Netcraft](https://netcraft.com).
+[Netcraft](https://netcraft.com). This site will be a place to gather information about me, and potentially
+will be a place for me to post some of my thoughts in future.
 
 ## Current Work
 
@@ -19,10 +20,11 @@ moment.
 
 ## Technical Interests
 
-My main interest is in writing back-end code. When doing this, I enjoy working with `vim`, `tmux` and `zsh`.
-The languages I'm most comfortable in are Go, Python and Java.
+Nowadays, my main interest is in designing systems and writing back-end code. When doing this, I enjoy working
+in the terminal using `vim`, `tmux` and `zsh` (my dotfiles can be found 
+[here](https://github.com/jamespwilliams/dotfiles)). The languages I'm most comfortable in are Go, Python and Java.
 
 ## More Information
 
 You can find more information about me on my [LinkedIn](https://www.linkedin.com/in/jamesphwilliams/) and my
-[GitHub](https://github.com/jamespwilliams). You can also download a copy of my CV [here](abc).
+[GitHub](https://github.com/jamespwilliams).
