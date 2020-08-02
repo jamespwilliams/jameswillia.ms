@@ -1,9 +1,0 @@
-baseURL: http://jameswillia.ms/
-title: James Williams
-theme: book
-
-languageCode: "en-gb"
-
-params:
-  BookToC: true
-  BookMenuBundle: /menu
