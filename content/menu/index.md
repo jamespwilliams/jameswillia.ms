@@ -1,6 +1,10 @@
----
-headless: true
----
++++
+headless = true
++++
 
 - [**Home**]({{< relref "/" >}})
-<br />
+
+<br>
+
+- [**Blog**]({{< relref "/posts" >}})
+  - [Short Domain Names]({{< relref "/posts/shortest-domain-names.md" >}})

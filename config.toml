@@ -4,7 +4,7 @@ theme = "book"
 
 languageCode = "en-gb"
 
-[[params]]
+[params]
 BookToC = true
 BookMenuBundle = "/menu"
 
