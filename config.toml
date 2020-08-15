@@ -1,6 +1,7 @@
 baseurl = "https://jameswillia.ms/"
 title = "James Williams"
 theme = "book"
+uglyurls = true
 
 languageCode = "en-gb"
 
