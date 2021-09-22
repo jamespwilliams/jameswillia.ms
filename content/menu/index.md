@@ -12,3 +12,7 @@ headless = true
 
 - [**Blog**]({{< relref "/posts" >}})
   - [Short Domain Names]({{< relref "/posts/shortest-domain-names.md" >}})
+
+<br>
+
+- [**Guitar Tabs**]({{< relref "/tabs" >}})
