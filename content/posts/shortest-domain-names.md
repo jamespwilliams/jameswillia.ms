@@ -41,6 +41,4 @@ Security and Stability Advisory Committee:
 > SSAC recommends strongly against their use. As a result, the SSAC also
 > recommends that the use of DNS resource records such as A, AAAA, and MX in the
 > apex of a TopLevel Domain (TLD) be contractually prohibited where appropriate
-> and **strongly discouraged in all cases**.
-
-(emphasis mine).
+> and strongly discouraged in all cases.
