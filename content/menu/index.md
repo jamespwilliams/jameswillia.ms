@@ -11,7 +11,7 @@ headless = true
 <br>
 
 - [**Blog**]({{< relref "/posts" >}})
-  - [Short Domain Names]({{< relref "/posts/shortest-domain-names.md" >}})
+  - [Short URLs]({{< relref "/posts/shortest-urls.md" >}})
 
 <br>
 
