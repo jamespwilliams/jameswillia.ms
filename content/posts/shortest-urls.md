@@ -136,3 +136,10 @@ ICANN](https://www.icann.org/news/announcement-2013-08-30-en):
 
 And, furthermore, [the use of dotless domains is prohibited for new
 gTLDs](https://www.icann.org/en/announcements/details/new-gtld-dotless-domain-names-prohibited-30-8-2013-en).
+
+---
+
+Bonus fact: there's also nothing stopping ICANN adding an A record to the apex
+of the root zone, which would theoretically make the empty hostname resolvable.
+I imagine most browsers etc. would consider a URL with an empty hostname
+invalid -- Chrome considers both `http://` and `http://.` invalid, at least.
