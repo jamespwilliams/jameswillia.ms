@@ -76,7 +76,8 @@ Some of these aren't relevant to us:
   53, the port on which DNS nameservers listen.
 * Some have A records pointing to the root servers. I'm not sure why this is - I
   think it might be because no DNS has been configured in the TLD zone for these
-  TLDs.
+  TLDs. _Edit:_ matttpt on HN [pointed out the reason for
+  this](https://news.ycombinator.com/item?id=32802795).
 
 Filtering out the TLDs mentioned above, we get:
 
