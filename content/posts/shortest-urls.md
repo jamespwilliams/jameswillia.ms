@@ -110,14 +110,14 @@ $ <tld-a-records.tsv cut -f1 | xargs -I{} xdg-open 'https://{}'
 
 Some of them do indeed load:
 
-- [http://ai](http://ai) is a nice retro landing page for "Offshore Information
+- [http://ai](http://ai.) is a nice retro landing page for "Offshore Information
   Services", who [seem to maintain the .ai TLD](https://icannwiki.org/.ai)
-- [http://pn](http://pn) serves an "it works" page; [https://pn](https://pn) serves "hello world" (with an invalid certificate)
-- <https://uz> serves a HTTP 500; [https://uz](https://uz/) serves the
+- [http://pn](http://pn.) serves an "it works" page; [https://pn](https://pn.) serves "hello world" (with an invalid certificate)
+- [http://uz](http://uz.) serves a HTTP 500; [https://uz](https://uz.) serves the
   Uzbekistan ccTLD's homepage (with an invalid certificate)
-- <http://мон> eventually serves a blank page, but does also serve a
-  [favicon](http://xn--l1acc/favicon.ico); <https://мон> eventually serves a
-  default Apache landing page (with an invalid certificate)
+- [http://мон](http://мон.) eventually serves a blank page, but does also serve a
+  [favicon](http://xn--l1acc./favicon.ico); [https://мон](https://мон.)
+  eventually serves a default Apache landing page (with an invalid certificate)
 
 {{< figure src="/images/anguilla.png" alt="Screenshot of http://ai" caption="Screenshot of http://ai" >}}
 
