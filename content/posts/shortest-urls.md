@@ -8,16 +8,14 @@ What's the shortest URL for which content is served on the internet? There are
 single-letter second-level domains that are used in very short URLs, such
 as Google's <http://g.co> or Facebook's <https://m.me>.
 
-Many organisations use even shorter URLs internally. For example, Google's
-internal URL shortener uses URLs like `https://go/<id>` (Google's internal
-nameservers point the `go` name at their URL shortening service).
+But we can go shorter than this: there's nothing stopping TLD registry operators
+serving A records at the apexes of their TLD zones. For example, if Verisign
+(the operator of the `com` TLD registry) wished, they could add an A record at
+the apex of the `com` TLD zone -- `com` would then resolve to that IP, and your
+browser would connect to that IP when you visited `https://com`.
 
-In theory, there's nothing stopping TLD registries setting up their
-external-facing nameservers to serve records like this too: if Verisign wished,
-they could include an A record in the apex of the `com` TLD zone with an IP of a
-web server. Visiting `https://com` would then take you to that web server.
-
-Does any registry actually do this though? Surprisingly, the answer is yes.
+Does any registry operator actually do this though? Surprisingly, the answer is
+yes.
 
 ---
 
@@ -63,21 +61,22 @@ XN--MXTQ1M	127.0.53.53
 XN--NGBRX	127.0.53.53
 ```
 
-There's a bunch that have A records pointing at `127.0.53.53` (which is
-an internal IP): [arab](https://icannwiki.org/.arab),
-[عرب](https://icannwiki.org/.%D8%B9%D8%B1%D8%A8) (translates to "arab"),
-[kids](https://icannwiki.org/.kids), [music](https://icannwiki.org/.music), and
-[政府](https://icannwiki.org/.%E6%94%BF%E5%BA%9C) (translates to "government").
-It turns out this is a [special IP
-address](https://www.icann.org/resources/pages/name-collision-2013-12-06-en)
-designed to alert network adminstrators of _name collisions_: cases where
-networks have privately been using names underneath TLDs which used to be free,
-but have now been allocated as gTLDs. The `53.53` is a reference to port 53, the
-port used for the DNS.
+Some of these aren't relevant to us:
 
-Another strange set of entries are the ones with A records pointing to the root
-servers. I'm not sure why this is - I think it might be because no DNS has been
-configured in the TLD zone for these TLDs.
+* There's a bunch that have A records pointing at `127.0.53.53` (which is an
+  internal IP): [arab](https://icannwiki.org/.arab),
+  [عرب](https://icannwiki.org/.%D8%B9%D8%B1%D8%A8) (translates to "arab"),
+  [kids](https://icannwiki.org/.kids), [music](https://icannwiki.org/.music),
+  and [政府](https://icannwiki.org/.%E6%94%BF%E5%BA%9C) (translates to
+  "government"). It turns out this is a [special IP
+  address](https://www.icann.org/resources/pages/name-collision-2013-12-06-en)
+  designed to alert network adminstrators of _name collisions_: cases where
+  networks have privately been using names underneath TLDs which used to be
+  free, but have now been allocated as gTLDs. The `53.53` is a reference to port
+  53, the port on which DNS nameservers listen.
+* Some have A records pointing to the root servers. I'm not sure why this is - I
+  think it might be because no DNS has been configured in the TLD zone for these
+  TLDs.
 
 Filtering out the TLDs mentioned above, we get:
 
@@ -126,7 +125,7 @@ The others either time out or refuse the connection.
 
 ---
 
-I'll finish by mentioning that [the use of dotless domains is discouraged by
+[This practice -- publishing A records at TLD apexes -- is discouraged by
 ICANN](https://www.icann.org/news/announcement-2013-08-30-en):
 
 > *Recommendation*: Dotless domains will not be universally reachable and the
