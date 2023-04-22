@@ -14,6 +14,7 @@ headless = true
   - [Short URLs]({{< relref "/posts/shortest-urls.md" >}})
   - [ChatGPT vs a cryptic crossword]({{< relref "/posts/chatgpt-cryptics.md" >}})
   - [ChatGPT, rot13, and Daniel Kahneman]({{< relref "/posts/chatgpt-rot13.md" >}})
+  - [Playing devil's advocate on claims made in VPN adverts]({{< relref "/posts/vpn-devils-advocate.md" >}})
 
 <br>
 
