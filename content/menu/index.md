@@ -15,6 +15,7 @@ headless = true
   - [ChatGPT vs a cryptic crossword]({{< relref "/posts/chatgpt-cryptics.md" >}})
   - [ChatGPT, rot13, and Daniel Kahneman]({{< relref "/posts/chatgpt-rot13.md" >}})
   - [Playing devil's advocate on claims made in VPN adverts]({{< relref "/posts/vpn-devils-advocate.md" >}})
+  - [Adventures in building a Go container with Nix]({{< relref "/posts/go-nix-containers.md" >}})
 
 <br>
 
