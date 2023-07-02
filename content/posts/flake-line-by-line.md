@@ -37,7 +37,7 @@ input to build its packages.
 A flake can also have various outputs, but most importantly flakes output a
 `packages` set, which contains instructions that tell Nix how to build each of
 the packages contained in the flake. Those instructions are called
-_derivations_, and they will be executed when `nix build` is run against the
+_derivations_, and they will be executed when `nix build` is run on the
 flake. I'll go into more detail about flake outputs later.
 
 ## The flake
@@ -557,7 +557,7 @@ These closing brackets finish off the declaration of the `packages` output.
 
 In this line, we define a `devShells` output for the flake. This output gives
 Nix a derivation to load into the environment when someone runs `nix develop`
-against the flake.
+on the flake.
 
 In particular, the `default` `devShell` for your system will be loaded when you
 run `nix develop`. Like with packages, you can define multiple different
