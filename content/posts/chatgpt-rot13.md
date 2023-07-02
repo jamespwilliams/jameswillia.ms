@@ -1,5 +1,5 @@
 ---
-title: "ChatGPT, rot13, and Daniel Kahneman"
+title: "ChatGPT vs rot13"
 date: 2022-12-05:00:20+01:00
 ---
 
