@@ -29,7 +29,7 @@ warning: Git tree '/home/jpw/go-container' is dirty
 error: unable to execute '/nix/store/0y6yhlqpa6qczqy6cy0kakqqcswm0pzc-myapp-0.1/bin/myapp': No such file or directory
 ```
 
-Hm, it's not working - `nix run` is trying to execute a binary that doesn't in the derivation. Let's build the derivation to see what's going on under the hood:
+Hm, it's not working - `nix run` is trying to execute a binary that doesn't exist in the derivation. Let's build the derivation to see what's going on under the hood:
 
 ```
 $ nix build
