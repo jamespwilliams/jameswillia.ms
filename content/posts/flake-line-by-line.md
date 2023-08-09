@@ -10,7 +10,7 @@ with lot of theory -- I've tried to avoid that here!
 
 I'm not a Nix expert, so take this with a bit of a pinch of salt. If you
 notice a mistake please do let me know by making an issue at
-https://github.com/jamespwilliams/jameswillia.ms and I'll happily correct it.
+<https://github.com/jamespwilliams/jameswillia.ms> and I'll happily correct it.
 When in doubt, consult the manual or Nix wiki.
 
 Disclaimers over...
@@ -18,7 +18,7 @@ Disclaimers over...
 ## What actually is a flake?
 
 If you want a more authoritative explanation of flakes, see
-https://nixos.wiki/wiki/Flakes, but the following section should give you
+<https://nixos.wiki/wiki/Flakes>, but the following section should give you
 enough information to understand the rest of this article.
 
 At the most basic level, a Nix flake is a way of instructing Nix how to
@@ -43,7 +43,7 @@ flake. I'll go into more detail about flake outputs later.
 ## The flake
 
 Let's study a simple Go flake from the set of templates at
-https://github.com/NixOS/templates:
+<https://github.com/NixOS/templates>:
 
 ```
 $ nix flake init --template templates#go
