@@ -373,9 +373,12 @@ Here's `flake.nix`:
 
 So, we've split the container building code into a separate Nix expression, in a separate file, that accepts the package from the flake through its `packages` argument.
 
+We need to run `git add container.nix` before rebuilding. Nix flakes, when used with Git, are tied to respository state and any extra nix expressions must be included.
+
 Let's check it works:
 
 ```
+$ git add container.n
 $ nix build .#container
 $ docker load < result && docker run --rm example:0.1
 ace5c9ecfd0b: Loading layer  1.341MB/1.341MB
