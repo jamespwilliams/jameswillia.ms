@@ -376,6 +376,7 @@ So, we've split the container building code into a separate Nix expression, in a
 Let's check it works:
 
 ```
+$ git add container.nix
 $ nix build .#container
 $ docker load < result && docker run --rm example:0.1
 ace5c9ecfd0b: Loading layer  1.341MB/1.341MB
@@ -383,6 +384,8 @@ The image example:0.1 already exists, renaming the old one with ID sha256:93d153
 Loaded image: example:0.1
 Hello flake
 ```
+
+(Note that we need to run `git add container.nix` before rebuilding. When nix builds a flake from a Git repository, unstaged Git changes will be ignored).
 
 Good to see it still works!
 
